@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap");
+body, ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.articles__text, .team__text, .footer__text, .about__text {
+  color: grey;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300; }
+
+.header {
+  text-align: center; }
+  .header .header__menu {
+    margin: 20px auto; }
+  .header .header__image img {
+    width: 100%;
+    margin: 0px; }
+  .header .header__topbar {
+    background: grey;
+    height: 40px; }
+  .header .menu__navigation {
+    display: inline-block;
+    padding: 12px 3px; }
+    .header .menu__navigation a {
+      text-decoration: none; }
+
+@media screen and (min-width: 700px) {
+  .header .menu__navigation {
+    display: inline-block;
+    padding: 20px 12px;
+    font-size: 22px; } }
+@media screen and (min-width: 1200px) {
+  .menu__logo {
+    margin-left: 20px; }
+
+  .header__menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; } }
+.articles {
+  max-width: 1300px;
+  margin: 100px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  .articles .articles__block {
+    background: #f2f2f2;
+    max-width: 250px;
+    display: -ms-grid;
+    display: grid;
+    margin: 50px 50px; }
+    .articles .articles__block .articles__text {
+      padding: 15px; }
+    .articles .articles__block .articles__navigation {
+      background: grey;
+      padding: 15px; }
+      .articles .articles__block .articles__navigation a {
+        color: #fff;
+        text-decoration: none; }
+
+@media screen and (min-width: 700px) {
+  .articles {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+@media screen and (min-width: 1200px) {
+  .articles {
+    justify-content: space-between; }
+    .articles .articles__block {
+      margin: 50px 18px; } }
+.team {
+  margin: 100px auto;
+  text-align: center;
+  max-width: 1300px;
+  display: -ms-grid;
+  display: grid; }
+  .team .team__img {
+    margin: 20px; }
+    .team .team__img img {
+      width: 100%;
+      margin: 0px; }
+  .team .team__member {
+    align-items: center;
+    padding: 20px;
+    grid-template-columns: auto auto;
+    display: -ms-grid;
+    display: grid; }
+    .team .team__member img {
+      width: 100%;
+      margin: 0px; }
+    .team .team__member .team__text {
+      text-align: left;
+      padding: 0 20px; }
+
+@media screen and (min-width: 1200px) {
+  .team {
+    align-items: start;
+    height: 500px;
+    grid-template-columns: auto auto; }
+    .team .team__member {
+      grid-column: 2; }
+    .team .team__img {
+      grid-row: 1/ span 2; }
+      .team .team__img img {
+        height: 400px;
+        min-width: 80px; } }
+.about {
+  align-items: center;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1300px; }
+  .about .about__img {
+    margin: 20px; }
+    .about .about__img img {
+      width: 100%;
+      margin: 0px; }
+  .about .about__text {
+    padding: 0 20px; }
+
+@media screen and (min-width: 1200px) {
+  .about {
+    flex-direction: row-reverse; }
+
+  .about__img img {
+    height: 400px;
+    min-width: 625px; } }
+.footer {
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 15px 20px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  background: grey; }
+  .footer .footer__text {
+    padding: 10px 30px;
+    color: #fff; }
+
+@media screen and (min-width: 700px) {
+  .footer {
+    grid-template-columns: auto auto; } }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 20px 130px;
+    grid-template-columns: auto auto auto auto; } }
+
+/*# sourceMappingURL=style.css.map */
