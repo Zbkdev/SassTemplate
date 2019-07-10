@@ -1,0 +1,46 @@
+@import 'style';
+
+
+
+.team {
+    margin: 100px auto;
+    text-align: center;
+    max-width: 1300px;
+     @include grid;
+    .team__img {
+        margin: 20px;
+        img {
+            @include img;
+        }
+    }
+    .team__member {
+        align-items: center;
+        padding: 20px;
+        grid-template-columns: auto auto;
+         @include grid;
+        img {
+            @include img;
+        }
+        .team__text {
+            text-align: left;
+            padding: 0 20px;
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .team {
+        align-items: start;
+        height: 500px;
+        grid-template-columns: auto auto;
+        .team__member {
+            grid-column: 2;
+        }
+        .team__img {
+            grid-row: 1/ span 2;
+            img {
+                height: 400px;
+                min-width: 80px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import 'style';
+
+
+
+.about {
+    align-items: center;
+    margin: 100px auto;
+    @include flexbox;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1300px;
+    .about__img {
+        margin: 20px;
+        img {
+            @include img;
+        }
+    }
+    .about__text {
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .about {
+        flex-direction: row-reverse;
+    }
+    .about__img {
+        img {
+            height: 400px;
+            min-width: 625px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap");
+body, ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.text {
+  color: grey;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  padding: 0 10px; }
+
+.footer {
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 15px 20px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  background: grey; }
+  .footer .text--white {
+    padding: 10px 30px;
+    color: #fff; }
+
+@media screen and (min-width: 700px) {
+  .footer {
+    grid-template-columns: auto auto; } }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 20px 130px;
+    grid-template-columns: auto auto auto auto; } }

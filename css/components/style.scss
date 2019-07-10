@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&display=swap');
+
+@mixin paragraph-font{
+  color: grey;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+@mixin img{
+  width: 100%;
+  margin: 0px;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+body , ul{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  @include paragraph-font;
+}
+
+

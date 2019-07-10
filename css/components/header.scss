@@ -1,0 +1,47 @@
+@import 'style';
+
+.header {
+    text-align: center;
+    .header__menu {
+        margin: 20px auto;
+    }
+    .header__image {
+        img {
+            @include img;
+        }
+    }
+    .header__topbar {
+        background: grey;
+        height: 40px;
+    }
+    .menu__navigation {
+        display: inline-block;
+        padding: 12px 3px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+  .header .menu__navigation {
+     display: inline-block;
+      padding: 20px 12px;
+      font-size: 22px;}
+
+}
+
+@media screen and (min-width: 1200px) {
+  
+ .menu__logo {
+    margin-left: 20px;
+}
+.header__menu {
+    @include flexbox;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}}
+

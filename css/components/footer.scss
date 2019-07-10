@@ -1,0 +1,26 @@
+@import 'style';
+
+
+.footer {
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 15px 20px;
+    text-align: center;
+     @include grid;
+    background: grey;
+    .text--white {
+        padding: 10px 30px;
+        color: #fff;
+    }
+}
+@media screen and (min-width:700px) {
+    .footer {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width:1200px) {
+    .footer {
+        padding: 20px 130px;
+        grid-template-columns: auto auto auto auto;
+    }
+}
